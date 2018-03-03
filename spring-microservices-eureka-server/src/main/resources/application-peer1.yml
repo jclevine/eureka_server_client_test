@@ -8,8 +8,7 @@ eureka:
       defaultZone: http://peer2:8762  # Where's my buddy?
   instance:
     hostname: peer1
-    health-check-url: http://peer1:8761/actuator/health
-    status-page-url: http://peer1:8761/actuator/status
+    health-check-url: http://peer1:8761/health
+    status-page-url: http://peer1:8761/status
     lease-renewal-interval-in-seconds: 5
-    
   

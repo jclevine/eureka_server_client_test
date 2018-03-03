@@ -1,6 +1,7 @@
 buildscript {
+
 	ext {
-		springBootVersion = '2.0.0.RELEASE'
+		springBootVersion = '1.5.9.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -28,7 +29,7 @@ repositories {
 
 
 ext {
-	springCloudVersion = 'Finchley.BUILD-SNAPSHOT'
+	springCloudVersion = 'Edgware.SR2'
 }
 
 dependencies {
@@ -37,6 +38,8 @@ dependencies {
 	compile('com.sun.xml.bind:jaxb-core:2.2.11')
 	compile('com.sun.xml.bind:jaxb-impl:2.2.11')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	
+
 }
 
 dependencyManagement {
