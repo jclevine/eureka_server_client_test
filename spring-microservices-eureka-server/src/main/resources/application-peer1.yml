@@ -1,0 +1,15 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url: 
+      defaultZone: http://peer2:8762  # Where's my buddy?
+  instance:
+    hostname: peer1
+    health-check-url: http://peer1:8761/actuator/health
+    status-page-url: http://peer1:8761/actuator/status
+    lease-renewal-interval-in-seconds: 5
+    
+  
