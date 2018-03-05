@@ -1,11 +1,11 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://peer1:8761/eureka
+      defaultZone: http://peer2:8762/eureka,http://peer1:8761/eureka
     region: defaultZone
 spring:    
   application:
-    name: MyStupidService
+    name: SoVeryHappy
      
 logging:
   level:

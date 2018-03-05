@@ -8,6 +8,4 @@ eureka:
       defaultZone: http://peer1:8761
   instance:
     hostname: peer2
-    health-check-url: http://peer2:8762/health
-    status-page-url: http://peer2:8762/status
   
