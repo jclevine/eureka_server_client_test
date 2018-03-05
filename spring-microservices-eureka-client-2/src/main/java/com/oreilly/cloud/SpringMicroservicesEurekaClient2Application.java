@@ -15,12 +15,16 @@ import com.netflix.discovery.EurekaClient;
 @RestController
 public class SpringMicroservicesEurekaClient2Application {
 
-	@Autowired
 	private EurekaClient client;
+	
+	@Autowired
+	public SpringMicroservicesEurekaClient2Application(EurekaClient client) {
+		this.client = client;
+	}
 	
 	@RequestMapping("/serviceinfo")
 	public String serviceInfo() {
-//		InstanceInfo instance = client.getNextServerFromEureka("SoVeryHappy", false);		
+		InstanceInfo instance = client.getNextServerFromEureka("SoVeryHappy", false);		
 		return "This is from #2! Wow!";
 	}
 	
