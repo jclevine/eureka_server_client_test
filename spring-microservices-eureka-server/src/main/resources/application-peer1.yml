@@ -5,7 +5,10 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url: 
-      defaultZone: http://peer2:8762  # Where's my buddy?
+      defaultZone: http://peer2:8762/eureka  # Where's my buddy?
   instance:
     hostname: peer1
-  
+spring:
+  freemarker:
+    prefer-file-system-access: false
+    
