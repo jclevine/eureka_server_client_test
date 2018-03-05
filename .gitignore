@@ -2,5 +2,4 @@
 .recommenders/
 RemoteSystemsTempFiles/
 Servers/
-spring-microservices-config-client/**/*
-spring-microservices-config/**/*spring-microservices-catalogue/**/*
+.gradle/
